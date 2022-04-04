@@ -20,10 +20,11 @@ if it is damaged or lost for any reason, the grantee university must provide ano
 which is time-consuming for the recipient university or the scholarship recipient.
 
 ## Stockholders
+>not added yet
 
 ## System Roles
-1. System admin **questionable**
-2. University admin **questionable**
+1. System admin (**questionable**)
+2. University admin (**questionable**)
 3. University user
 
 ### System admin
@@ -38,7 +39,7 @@ as a part of the system that being added by the system admin.<br/>
 And he must accept the scholarship that the user made from the university or reject it.
 
 
-### Uniersity user
+### University user
 This role is the main role of the system, will be explained briefly in a moment.
 This role has two primary set of rules:
 1. Add a Scholarship.
@@ -46,4 +47,13 @@ This role has two primary set of rules:
 3. View the received scholarships and add a candidate (student) to that
 specific scholarship.
 4. Remove an added candidate.
-5. Add 
+5. Add description to the candidate information.
+
+### Scholarship
+This entity is concerned with the scholarships that colleges can offer to other institutions in order to help students.
+<br/>
+Every scholarship have a set of strict rules:
+1.When added (state:public/pending) 
+>as can be sent to anyone but a single one only<
+
+2.When sent can't be resent to anyone else, only if the university user rejected it
