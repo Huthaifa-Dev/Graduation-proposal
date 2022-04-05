@@ -53,7 +53,11 @@ specific scholarship.
 This entity is concerned with the scholarships that colleges can offer to other institutions in order to help students.
 <br/>
 Every scholarship have a set of strict rules:
-1.When added (state:public/pending) 
->as can be sent to anyone but a single one only<
-
-2.When sent can't be resent to anyone else, only if the university user rejected it
+1. When added (state:public/pending)
+`as can be sent to anyone but a single one only
+`
+2. When sent can't be re-sent to anyone else, only if the university user rejected it.
+3. When sent can't be edited by the source university. However, it can be duplicated as a new scholarship with a new ID and the same data.
+4. When a candidate is attached to a scholarship, the university that owns the scholarship can deny or accept the candidate.
+5. When a candidate is rejected, the scholarship is returned to the offered university with the same state and info before (not a new entity e.g. new ID).
+6. When a 
